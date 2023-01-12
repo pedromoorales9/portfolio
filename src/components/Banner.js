@@ -3,6 +3,8 @@ import React from 'react';
 import Image from '../assets/avatar.svg';
 // icons
 import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+// type animation
+import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
   return (
@@ -11,9 +13,26 @@ const Banner = () => {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center lg:text-left font-secondary'>
-            <h1 className='text-[110px] font-bold leading-[1] mb-2'>
-              BEN <span className='text-accent'>AIDEN</span>
+            <h1 className='text-[110px] font-bold leading-[1]'>
+              BEN <span className='text-white'>AIDEN</span>
             </h1>
+            <div className='mb-8 text-[55px] font-secondary font-semibold uppercase'>
+              <span className='text-white mr-4'>I am a</span>
+              <TypeAnimation
+                sequence={[
+                  'Developer',
+                  2000,
+                  'Designer',
+                  2000,
+                  'Youtuber',
+                  2000,
+                ]}
+                speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                className='text-accent'
+                wrapper='span' // Animation will be rendered as a <span>
+                repeat={Infinity} // Repeat this Animation Sequence infinitely
+              />
+            </div>
             <p className='mb-8 max-w-lg mx-auto lg:mx-0'>
               Lorem ipsum dolor sit amet, consecteur adipiscing elit.Duis ac
               metus ac erat iaculis pretium. Nullam vel nibh.
