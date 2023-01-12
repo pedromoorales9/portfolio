@@ -23,7 +23,8 @@
   );
 }
 
-.gradient {
+.gradient,
+.active {
   background: linear-gradient(
     92.23deg,
     #406aff 21.43%,
@@ -33,12 +34,24 @@
   );
 }
 
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8;
   }
   .btn {
-    @apply h-[56px] rounded-full font-primary text-base font-semibold px-8;
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-5 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-8 text-base;
   }
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
