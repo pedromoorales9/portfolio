@@ -16,10 +16,10 @@ const Banner = () => {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center lg:text-left font-secondary'>
-            <h1 className='text-[55px] lg:text-[110px] font-bold leading-[1]'>
+            <h1 className='text-[55px] lg:text-[110px] font-bold leading-[0.8]'>
               BEN <span className='text-white'>AIDEN</span>
             </h1>
-            <div className='mb-8 text-[36px] lg:text-[55px] font-secondary font-semibold uppercase'>
+            <div className='mb-8 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation
                 sequence={[

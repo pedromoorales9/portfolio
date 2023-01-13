@@ -10,7 +10,7 @@ const Nav = () => {
     <nav className='fixed bottom-16 lg:bottom-8 w-full overflow-hidden'>
       <div className='container mx-auto'>
         {/* nav inner */}
-        <div className='w-full bg-black/20 backdrop-blur-3xl h-[96px] rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
+        <div className='w-full bg-black/20 backdrop-blur-2xl h-[96px] rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
           <Link
             to='home'
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'

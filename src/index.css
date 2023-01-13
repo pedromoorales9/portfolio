@@ -42,18 +42,34 @@
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8;
+    @apply font-secondary text-lg leading-8 text-white;
   }
+
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+
+  .h3 {
+    @apply font-primary text-[26px] mb-6 leading-[46px] font-medium;
+  }
+
   .btn {
     @apply rounded-full font-primary text-white font-medium;
   }
+
   .btn-sm {
     @apply h-[48px] px-5 text-sm;
   }
+
   .btn-lg {
     @apply h-[56px] px-8 text-base;
   }
+
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+
+  .section {
+    @apply py-24;
   }
 }
