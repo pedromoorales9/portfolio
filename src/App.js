@@ -7,7 +7,7 @@ import About from './components/About';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover'>
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
       <Nav />

@@ -4,19 +4,10 @@ import { BiHomeAlt, BiUser } from 'react-icons/bi';
 import { BsClipboardData, BsBriefcase, BsChatSquareText } from 'react-icons/bs';
 // react scroll
 import { Link, animateScroll as scroll } from 'react-scroll';
-// import motion
-import { motion } from 'framer-motion';
-// import fadeIn
-import { fadeIn } from '../variants';
 
 const Nav = () => {
   return (
-    <motion.nav
-      variants={fadeIn('up', 0.7)}
-      initial='hidden'
-      whileInView={'show'}
-      className='fixed bottom-16 lg:bottom-8 w-full overflow-hidden'
-    >
+    <nav className='fixed bottom-16 lg:bottom-8 w-full overflow-hidden z-50'>
       <div className='container mx-auto'>
         {/* nav inner */}
         <div className='w-full bg-black/20 backdrop-blur-2xl h-[96px] rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
@@ -59,7 +50,7 @@ const Nav = () => {
           </Link>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

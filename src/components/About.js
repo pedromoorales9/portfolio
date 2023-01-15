@@ -53,7 +53,7 @@ const About = () => {
             <div className='flex gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-base'>
                   Years of
@@ -62,7 +62,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={15} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
                   k+
                 </div>
                 <div className='font-primary text-base'>
@@ -71,7 +71,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={12} duration={2} /> : null}
+                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
                   k+
                 </div>
                 <div className='font-primary text-base'>
