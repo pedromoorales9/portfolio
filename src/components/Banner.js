@@ -16,7 +16,7 @@ const Banner = () => {
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center lg:text-left font-secondary'>
-            <h1 className='text-[55px] lg:text-[110px] font-bold leading-[0.8]'>
+            <h1 className='text-[55px] lg:text-[110px] font-bold leading-[1]'>
               BEN <span className='text-white'>AIDEN</span>
             </h1>
             <div className='mb-8 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
@@ -42,7 +42,7 @@ const Banner = () => {
             </p>
             <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
               <button className='btn btn-lg btn-primary'>Download CV</button>
-              <a href='#' className='text-gradient'>
+              <a href='#' className='text-gradient btn-link'>
                 My Skills
               </a>
             </div>

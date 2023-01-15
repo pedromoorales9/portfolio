@@ -4,6 +4,7 @@ module.exports = {
     fontFamily: {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
+      tertiary: 'Aldrich',
     },
     container: {
       padding: {
