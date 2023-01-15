@@ -21,7 +21,7 @@ const Banner = () => {
           {/* text */}
           <div className='flex-1 text-center lg:text-left font-secondary'>
             <motion.h1
-              variants={fadeIn('up')}
+              variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               // viewport={{ once: false, amount: 0.7 }}
@@ -30,7 +30,7 @@ const Banner = () => {
               BEN <span className='text-white'>AIDEN</span>
             </motion.h1>
             <motion.div
-              variants={fadeIn('up', 0.2)}
+              variants={fadeIn('up', 0.4)}
               initial='hidden'
               whileInView={'show'}
               // viewport={{ once: false, amount: 0.7 }}
@@ -53,7 +53,7 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
               // viewport={{ once: false, amount: 0.7 }}
@@ -63,7 +63,7 @@ const Banner = () => {
               metus ac erat iaculis pretium. Nullam vel nibh.
             </motion.p>
             <motion.div
-              variants={fadeIn('up', 0.4)}
+              variants={fadeIn('up', 0.6)}
               initial='hidden'
               whileInView={'show'}
               // viewport={{ once: false, amount: 0.7 }}
@@ -76,7 +76,7 @@ const Banner = () => {
             </motion.div>
             {/* socials */}
             <motion.div
-              variants={fadeIn('up', 0.5)}
+              variants={fadeIn('up', 0.7)}
               initial='hidden'
               whileInView={'show'}
               // viewport={{ once: false, amount: 0.7 }}
@@ -95,7 +95,7 @@ const Banner = () => {
           </div>
           {/* image */}
           <motion.div
-            variants={fadeIn('down', 0.1)}
+            variants={fadeIn('down', 0.5)}
             initial='hidden'
             whileInView={'show'}
             // viewport={{ once: false, amount: 0.7 }}

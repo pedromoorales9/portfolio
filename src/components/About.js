@@ -5,22 +5,42 @@ import Img from '../assets/photo.png';
 import CountUp from 'react-countup';
 // react intersetction observer
 import { useInView } from 'react-intersection-observer';
+// import motion
+import { motion } from 'framer-motion';
+// import fadeIn
+import { fadeIn } from '../variants';
 
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
   return (
-    <section id='about' className='h-screen section' ref={ref}>
+    <section
+      id='about'
+      className='h-screen section flex items-center'
+      ref={ref}
+    >
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:gap-x-20 lg:gap-y-0'>
           {/* img */}
-          <div className='flex-1'>
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex-1'
+          >
             <img src={Img} alt='' />
-          </div>
+          </motion.div>
           {/* text */}
-          <div className='flex-1'>
-            <h2 className='h2'>About me.</h2>
+          <motion.div
+            variants={fadeIn('left', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex-1'
+          >
+            <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
               I'm a Freelancer Front-end Developer with over 5 years of
               experience.
@@ -65,7 +85,7 @@ const About = () => {
                 My Portfolio
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
