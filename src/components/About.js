@@ -15,11 +15,7 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section
-      id='about'
-      className='h-screen section flex items-center'
-      ref={ref}
-    >
+    <section id='about' className='section' ref={ref}>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:gap-x-20 lg:gap-y-0'>
           {/* img */}

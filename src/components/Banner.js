@@ -24,7 +24,7 @@ const Banner = () => {
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
-              // viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               className='text-[55px] lg:text-[110px] font-bold leading-[0.8]'
             >
               BEN <span className='text-white'>AIDEN</span>
