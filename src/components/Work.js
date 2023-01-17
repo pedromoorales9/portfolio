@@ -16,7 +16,7 @@ const Work = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='flex-1 flex flex-col gap-y-10'
+            className='flex-1 flex flex-col gap-y-20'
           >
             <div>
               <h2 className='h2 leading-tight text-accent'>
@@ -26,7 +26,7 @@ const Work = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
                 metus ac erat iaculis pretium. Nullam vel nibh pulvinar.
               </p>
-              <button className='btn btn-sm mb-[132px]'>View all</button>
+              <button className='btn btn-sm'>View all</button>
             </div>
             <img src={Img} alt='' />
           </motion.div>
