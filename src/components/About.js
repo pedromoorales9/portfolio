@@ -1,6 +1,6 @@
 import React from 'react';
 // img
-import Img from '../assets/photo.png';
+import Img from '../assets/image.png';
 // react countup
 import CountUp from 'react-countup';
 // react intersetction observer
@@ -55,7 +55,7 @@ const About = () => {
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
-                <div className='font-primary text-base'>
+                <div className='font-primary text-sm tracking-[2px]'>
                   Years of
                   <br /> Experience
                 </div>
@@ -65,7 +65,7 @@ const About = () => {
                   {inView ? <CountUp start={0} end={15} duration={3} /> : null}
                   k+
                 </div>
-                <div className='font-primary text-base'>
+                <div className='font-primary text-sm tracking-[2px]'>
                   Projects <br /> Completed
                 </div>
               </div>
@@ -74,7 +74,7 @@ const About = () => {
                   {inView ? <CountUp start={0} end={12} duration={3} /> : null}
                   k+
                 </div>
-                <div className='font-primary text-base'>
+                <div className='font-primary text-sm tracking-[2px]'>
                   Satisfied <br /> Clients
                 </div>
               </div>

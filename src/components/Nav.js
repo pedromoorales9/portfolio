@@ -23,15 +23,18 @@ const Nav = () => {
           </Link>
           <Link
             to='about'
-            className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
             activeClass='active'
             smooth={true}
             spy={true}
+            className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
           >
             <BiUser />
           </Link>
           <Link
             to='services'
+            activeClass='active'
+            smooth={true}
+            spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
           >
             <BsClipboardData />

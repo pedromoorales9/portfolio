@@ -71,7 +71,7 @@ const Banner = () => {
             >
               <button className='btn btn-lg btn-primary'>Download CV</button>
               <a href='#' className='text-gradient btn-link'>
-                My Skills
+                My Portfolio
               </a>
             </motion.div>
             {/* socials */}
