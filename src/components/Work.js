@@ -31,7 +31,7 @@ const Work = () => {
             <img src={Img} alt='' />
           </motion.div>
           <motion.div
-            variants={fadeIn('left', 0.3)}
+            variants={fadeIn('left', 0.2)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
