@@ -1,22 +1,38 @@
 import React from 'react';
 // motion
 import { motion } from 'framer-motion';
+// variants
+import { fadeIn } from '../variants';
 
 const Contact = () => {
   return (
     <section className='section' id='contact'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
-          <motion.div className='flex-1 flex justify-start items-center'>
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex-1 flex justify-start items-center'
+          >
             <div>
-              <h4 className='text-xl text-accent font-medium'>Get in touch</h4>
+              <h4 className='text-xl text-accent font-semibold mb-4'>
+                Get in touch
+              </h4>
               <h2 className='text-[90px] leading-none mb-12'>
                 Let's work <br />
                 together!
               </h2>
             </div>
           </motion.div>
-          <motion.form className='flex-1 rounded-2xl flex flex-col gap-y-6 p-6 pb-24 border items-start'>
+          <motion.form
+            variants={fadeIn('left', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex-1 rounded-2xl flex flex-col gap-y-6 p-6 pb-24 border items-start'
+          >
             <input
               className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white'
               placeholder='Your name'
