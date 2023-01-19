@@ -1,6 +1,4 @@
 import React from 'react';
-// img
-import Img from '../assets/image.png';
 // icon
 import { BsArrowUpRight } from 'react-icons/bs';
 // motion
@@ -44,14 +42,15 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='flex-1'
+            className='flex-1 bg-services bg-bottom bg-no-repeat mix-blend-lighten'
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
-            <h3 className='h3 mb-12 max-w-[455px]'>
+            <h3 className='h3 max-w-[455px] mb-16'>
               I'm a Freelancer Front-end Developer with over 5 years of
               experience.
             </h3>
-            <img src={Img} alt='' />
+            <button className='btn btn-sm'>See my work</button>
+            {/* <div className='bg-services bg-contain bg-no-repeat bg-right-top mix-blend-lighten h-[788px]'></div> */}
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.5)}

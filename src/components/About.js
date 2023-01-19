@@ -1,6 +1,4 @@
 import React from 'react';
-// img
-import Img from '../assets/image.png';
 // react countup
 import CountUp from 'react-countup';
 // react intersetction observer
@@ -17,17 +15,15 @@ const About = () => {
   return (
     <section id='about' className='section' ref={ref}>
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:gap-x-20 lg:gap-y-0'>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0'>
           {/* img */}
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='flex-1'
-          >
-            <img src={Img} alt='' />
-          </motion.div>
+            className='flex-1 bg-about bg-contain bg-no-repeat bg-top mix-blend-lighten h-[640px]'
+          ></motion.div>
           {/* text */}
           <motion.div
             variants={fadeIn('left', 0.5)}

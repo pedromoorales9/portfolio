@@ -26,9 +26,17 @@ const Work = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
                 metus ac erat iaculis pretium. Nullam vel nibh pulvinar.
               </p>
-              <button className='btn btn-sm'>View all</button>
+              <button className='btn btn-sm'>View all projects</button>
             </div>
-            <img src={Img} alt='' />
+            <div className='group relative overflow-hidden'>
+              <img src={Img} alt='' />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500'>
+                <span className='text-gradient'>UI/UX Design</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700'>
+                <span className='text-3xl text-white'>Project Title</span>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.2)}
@@ -37,8 +45,24 @@ const Work = () => {
             viewport={{ once: false, amount: 0.7 }}
             className='flex-1 flex flex-col gap-y-10'
           >
-            <img src={Img} alt='' />
-            <img src={Img} alt='' />
+            <div className='group relative overflow-hidden'>
+              <img src={Img} alt='' />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500'>
+                <span className='text-gradient'>Frontend Development</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700'>
+                <span className='text-3xl text-white'>Project Title</span>
+              </div>
+            </div>
+            <div className='group relative overflow-hidden'>
+              <img src={Img} alt='' />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500'>
+                <span className='text-gradient'>Web Design</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700'>
+                <span className='text-3xl text-white'>Project Title</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
