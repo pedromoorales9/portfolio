@@ -20,7 +20,7 @@ const Contact = () => {
               <h4 className='text-xl text-accent font-semibold mb-4'>
                 Get in touch
               </h4>
-              <h2 className='text-[90px] leading-none mb-12'>
+              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
                 Let's work <br />
                 together!
               </h2>
@@ -44,7 +44,7 @@ const Contact = () => {
               type='text'
             />
             <textarea
-              class='bg-transparent border-b py-12 outline-none resize-none w-full mb-12 placeholder:text-white'
+              className='bg-transparent border-b py-12 outline-none resize-none w-full mb-12 placeholder:text-white'
               placeholder='Your Message'
             ></textarea>
             <button className='btn btn-lg'>Send Message</button>
