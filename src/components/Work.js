@@ -15,8 +15,8 @@ const Work = () => {
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='flex-1 flex flex-col gap-y-20'
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-20 mb-10 lg:mb-0'
           >
             <div>
               <h2 className='h2 leading-tight text-accent'>
@@ -42,7 +42,7 @@ const Work = () => {
             variants={fadeIn('left', 0.2)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-10'
           >
             <div className='group relative overflow-hidden'>

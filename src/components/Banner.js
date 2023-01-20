@@ -46,17 +46,16 @@ const Banner = () => {
                   'Youtuber',
                   2000,
                 ]}
-                speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                speed={50}
                 className='text-accent'
-                wrapper='span' // Animation will be rendered as a <span>
-                repeat={Infinity} // Repeat this Animation Sequence infinitely
+                wrapper='span'
+                repeat={Infinity}
               />
             </motion.div>
             <motion.p
               variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
-              // viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
               Lorem ipsum dolor sit amet, consecteur adipiscing elit.Duis ac
@@ -66,7 +65,6 @@ const Banner = () => {
               variants={fadeIn('up', 0.6)}
               initial='hidden'
               whileInView={'show'}
-              // viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <button className='btn btn-lg btn-primary'>Download CV</button>
@@ -79,7 +77,6 @@ const Banner = () => {
               variants={fadeIn('up', 0.7)}
               initial='hidden'
               whileInView={'show'}
-              // viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
               <a href='#'>
@@ -99,7 +96,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             // viewport={{ once: false, amount: 0.7 }}
-            className='flex-1 max-w-[320px] mx-auto lg:max-w-[482px]'
+            className='hidden lg:flex flex-1 max-w-[320px] mx-auto lg:max-w-[482px]'
           >
             <img src={Image} alt='' />
           </motion.div>
