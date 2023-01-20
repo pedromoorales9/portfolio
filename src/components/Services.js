@@ -41,8 +41,8 @@ const Services = () => {
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
-            className='flex-1 bg-services bg-bottom bg-no-repeat mix-blend-lighten'
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
@@ -50,13 +50,12 @@ const Services = () => {
               experience.
             </h3>
             <button className='btn btn-sm'>See my work</button>
-            {/* <div className='bg-services bg-contain bg-no-repeat bg-right-top mix-blend-lighten h-[788px]'></div> */}
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.5)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
             className='flex-1'
           >
             {/* service list */}
