@@ -20,27 +20,34 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'
           >
+            {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
-                My Latest <br /> Work.
+                My Latest <br />
+                Work.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
-                metus ac erat iaculis pretium. Nullam vel nibh pulvinar.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat, hic! Harum quis, cum velit neque esse eos molestias
+                doloremque explicabo!
               </p>
               <button className='btn btn-sm'>View all projects</button>
             </div>
-            {/* img */}
+            {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
                 src={Img1}
                 alt=''
               />
+              {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
+              {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <span className='text-3xl text-white'>Project Title</span>
               </div>
@@ -53,32 +60,40 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-10'
           >
-            {/* img */}
+            {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
                 src={Img2}
                 alt=''
               />
+              {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
+              {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <span className='text-3xl text-white'>Project Title</span>
               </div>
             </div>
-            {/* img */}
+            {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
                 src={Img3}
                 alt=''
               />
+              {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
+              {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
                 <span className='text-3xl text-white'>Project Title</span>
               </div>

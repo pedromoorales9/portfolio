@@ -1,11 +1,11 @@
 import React from 'react';
-// react countup
+// countup
 import CountUp from 'react-countup';
-// react intersetction observer
+// intersection observer hook
 import { useInView } from 'react-intersection-observer';
-// import motion
+// motion
 import { motion } from 'framer-motion';
-// import fadeIn
+// variant
 import { fadeIn } from '../variants';
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section id='about' className='section' ref={ref}>
+    <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* img */}
@@ -22,7 +22,7 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 bg-about bg-contain bg-no-repeat bg-top mix-blend-lighten h-[640px]'
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'
           ></motion.div>
           {/* text */}
           <motion.div
@@ -34,12 +34,13 @@ const About = () => {
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
-              I'm a Freelancer Front-end Developer with over 5 years of
+              I'm a Freelance Front-end Developer with over 5 years of
               experience.
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
-              metus ac erat iaculis pretium. Nullam vel nibh pulvinar.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+              natus omnis inventore quas beatae illo nulla. Officiis magni omnis
+              molestias.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -48,8 +49,8 @@ const About = () => {
                   {inView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Years of
-                  <br /> Experience
+                  Years of <br />
+                  Experience
                 </div>
               </div>
               <div>
@@ -58,7 +59,8 @@ const About = () => {
                   k+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Projects <br /> Completed
+                  Projects <br />
+                  Completed
                 </div>
               </div>
               <div>
@@ -67,12 +69,13 @@ const About = () => {
                   k+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Satisfied <br /> Clients
+                  Satisfied <br />
+                  Clients
                 </div>
               </div>
             </div>
-            <div className='flex items-center gap-x-8'>
-              <button className='btn btn-lg btn-primary'>Contact me</button>
+            <div className='flex gap-x-8 items-center'>
+              <button className='btn btn-lg'>Contact me</button>
               <a href='#' className='text-gradient btn-link'>
                 My Portfolio
               </a>

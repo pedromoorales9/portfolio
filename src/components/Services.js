@@ -3,40 +3,43 @@ import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 // motion
 import { motion } from 'framer-motion';
+// variants
 import { fadeIn } from '../variants';
-// services
+
+// services data
 const services = [
   {
-    name: 'UI/UX DESIGN',
+    name: 'UI/UX Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac metus ac erat iaculis pretium. Nullam vel nibh pulvinar.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
     link: 'Learn more',
   },
   {
-    name: 'DEVELOPMENT',
+    name: 'Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac metus ac erat iaculis pretium. Nullam vel nibh pulvinar.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
     link: 'Learn more',
   },
   {
-    name: 'DIGITAL MARKETING',
+    name: 'Digital Marketing',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac metus ac erat iaculis pretium. Nullam vel nibh pulvinar.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
     link: 'Learn more',
   },
   {
-    name: 'PRODUCT BRANDING',
+    name: 'Product Branding',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac metus ac erat iaculis pretium. Nullam vel nibh pulvinar.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
     link: 'Learn more',
   },
 ];
 
 const Services = () => {
   return (
-    <section id='services' className='section'>
+    <section className='section' id='services'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
+          {/* text & image */}
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial='hidden'
@@ -46,11 +49,12 @@ const Services = () => {
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a Freelancer Front-end Developer with over 5 years of
+              I'm a Freelance Front-end Developer with over 5 years of
               experience.
             </h3>
             <button className='btn btn-sm'>See my work</button>
           </motion.div>
+          {/* services */}
           <motion.div
             variants={fadeIn('left', 0.5)}
             initial='hidden'
@@ -61,6 +65,7 @@ const Services = () => {
             {/* service list */}
             <div>
               {services.map((service, index) => {
+                // destructure service
                 const { name, description, link } = service;
                 return (
                   <div
@@ -75,14 +80,14 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div className='flex flex-1 flex-col items-end'>
+                    <div className='flex flex-col flex-1 items-end'>
                       <a
                         href='#'
-                        className='btn w-9 h-9 rounded-full mb-[42px] flex justify-center items-center'
+                        className='btn w-9 h-9 mb-[42px] flex justify-center items-center'
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a className='text-gradient text-sm' href='#'>
+                      <a href='#' className='text-gradient text-sm'>
                         {link}
                       </a>
                     </div>
