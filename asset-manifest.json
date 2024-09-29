@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nombre-del-repositorio/static/css/main.77e04ae4.css",
+    "main.js": "/nombre-del-repositorio/static/js/main.e5ba0bed.js",
+    "static/media/site-bg.jpg": "/nombre-del-repositorio/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/portfolio-img1.png": "/nombre-del-repositorio/static/media/portfolio-img1.a64188bf05f3db213899.png",
+    "static/media/portfolio-img2.png": "/nombre-del-repositorio/static/media/portfolio-img2.8cae157181173528f36f.png",
+    "static/media/services.png": "/nombre-del-repositorio/static/media/services.3d45d27abd5e9b546332.png",
+    "static/media/portfolio-img3.png": "/nombre-del-repositorio/static/media/portfolio-img3.9f2feafc43241c5faac0.png",
+    "static/media/avatar.svg": "/nombre-del-repositorio/static/media/avatar.834eec69d5776e0854a3aa60d195ff21.svg",
+    "static/media/logo.svg": "/nombre-del-repositorio/static/media/logo.834eec69d5776e0854a3aa60d195ff21.svg",
+    "index.html": "/nombre-del-repositorio/index.html",
+    "main.77e04ae4.css.map": "/nombre-del-repositorio/static/css/main.77e04ae4.css.map",
+    "main.e5ba0bed.js.map": "/nombre-del-repositorio/static/js/main.e5ba0bed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77e04ae4.css",
+    "static/js/main.e5ba0bed.js"
+  ]
+}
