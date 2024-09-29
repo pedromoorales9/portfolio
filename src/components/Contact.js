@@ -19,10 +19,10 @@ const Contact = () => {
           >
             <div>
               <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>
-                Get in touch
+                Vamos a ello!
               </h4>
               <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
-                Let's work <br /> together!
+                Trabajemos <br /> juntos!
               </h2>
             </div>
           </motion.div>

@@ -9,28 +9,28 @@ import { fadeIn } from '../variants';
 // services data
 const services = [
   {
-    name: 'UI/UX Design',
+    name: 'Administracion de bases de datos',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
-    link: 'Learn more',
+      'Experto en la gestión y optimización de bases de datos como MySQL y SQL Server, asegurando su rendimiento, seguridad y disponibilidad.',
+    link: 'Saber mas',
   },
   {
-    name: 'Development',
+    name: 'Gestión de Windows Server',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
-    link: 'Learn more',
+      'Especialista en la administración de entornos Windows Server, incluyendo la configuración, gestión de usuarios y seguridad.',
+    link: 'saber mas',
   },
   {
-    name: 'Digital Marketing',
+    name: 'Programacion en HTML y CSS',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
-    link: 'Learn more',
+      'Desarrollo soluciones web utilizando HTML, CSS y JavaScript para crear interfaces modernas y funcionales.',
+    link: 'saber mas',
   },
   {
-    name: 'Product Branding',
+    name: 'Ciberseguridad',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
-    link: 'Learn more',
+      'Enfocada en la protección de sistemas y redes, implementando medidas de seguridad proactivas para prevenir vulnerabilidades.',
+    link: 'saber mas',
   },
 ];
 
@@ -47,12 +47,11 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'
           >
-            <h2 className='h2 text-accent mb-6'>What I Do.</h2>
+            <h2 className='h2 text-accent mb-6'>Que he realizado</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a Freelance Front-end Developer with over 5 years of
-              experience.
+              Con mis 4 años de experiencia he realizado
             </h3>
-            <button className='btn btn-sm'>See my work</button>
+            <button className='btn btn-sm'>Proyectos</button>
           </motion.div>
           {/* services */}
           <motion.div

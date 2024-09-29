@@ -23,15 +23,13 @@ const Work = () => {
             {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
-                My Latest <br />
-                Work.
+                Trabajos <br />
+                realizados.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat, hic! Harum quis, cum velit neque esse eos molestias
-                doloremque explicabo!
+              A lo largo de mi trayectoria, he tenido la oportunidad de trabajar en una variedad de proyectos que abarcan desde la administración de sistemas y redes hasta el desarrollo web y la ciberseguridad.
               </p>
-              <button className='btn btn-sm'>View all projects</button>
+              <button className='btn btn-sm'>Ver todos los proyectos</button>
             </div>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -45,11 +43,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>LDAP</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Gestión de dominios LDAP</span>
               </div>
             </div>
           </motion.div>
@@ -72,11 +70,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Servidores DHCP</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Creación y administración</span>
               </div>
             </div>
             {/* image */}
@@ -91,11 +89,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Gestion De Bases de Datos</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>administración y Creación</span>
               </div>
             </div>
           </motion.div>
